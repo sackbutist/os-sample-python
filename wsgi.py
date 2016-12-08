@@ -11,8 +11,8 @@ def hello_name(user):
 
 @application.route("/result")
 def result():
-   dict = {'phy':50,'che':60,'maths':70}
-   return render_template('result.html', result = dict)
+   dict = {"phy":50,"che":60,"maths":70}
+   return render_template("result.html", result = dict)
 
 if __name__ == "__main__":
     application.run()
