@@ -16,7 +16,7 @@ def student():
 @application.route("/result", methods = ['POST', 'GET'])
 def result():
    if request.method == 'POST':
-      result = request.forma
+      result = request.form
       return (result)
 #      return render_template("result.html", result = result)
 
