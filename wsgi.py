@@ -13,12 +13,11 @@ def hello_name(user):
 def student():
    return render_template('student.html')
 
-@application.route("/result", methods = ['POST', 'GET'])
+@application.route('/result',methods = ['POST', 'GET'])
 def result():
    if request.method == 'POST':
       result = request.form
-      return (result)
-#      return render_template("result.html", result = result)
+      return render_template("result.html",result = result)
 
 if __name__ == "__main__":
     application.run()
