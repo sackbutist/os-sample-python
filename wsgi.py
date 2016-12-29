@@ -1,7 +1,11 @@
 from flask import Flask
 application = Flask(__name__)
 
-@app.route("/hello/<name>")
+@application.route("/")
+def hello():
+    return "Hello World!!!!!!!!!!!!!!"
+
+@application.route("/hello/<name>")
 def hello_name(name):
     return "Hello %s!" % name
 
