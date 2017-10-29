@@ -11,7 +11,7 @@ def hello_name(user):
 
 @application.route('/student')
 def student():
-   return render_template('student.html')
+   return render_template('student.html', testiteksti="juho")
 
 @application.route('/result',methods = ['POST', 'GET'])
 def result():
